@@ -1,10 +1,15 @@
 package com.qburst.model;
 
-public class generate {
+import java.io.Serializable;
+
+public class generate implements Serializable {
     public String str;
 
     public generate(String str) {
         this.str = str;
+    }
+
+    public generate() {
     }
 
     public void setStr(String str) {

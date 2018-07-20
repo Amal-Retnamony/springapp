@@ -1,0 +1,14 @@
+<Html xmlns:th="http://www.w3.org/1999/xhtml">
+<body>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>City</th>
+    </tr>
+    <tr th:each="city : ${cities}" >
+        <td  th:text="${city.id}"></td>
+        <td  th:text="${city.name}"></td>
+    </tr>
+</table>
+</body>
+</Html>
